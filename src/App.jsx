@@ -1,17 +1,23 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import { Button } from '@mui/material'  
 import Header from './components/header'
 import Hero from './components/hero'
+import Home from './pages/home'
+import "./App.css"
+import CategoryCard from './components/categoryCard'
+
+
+
+
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Header />
-      <Hero/>
+     <Home />
 
       <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
