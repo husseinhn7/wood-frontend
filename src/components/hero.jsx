@@ -23,7 +23,7 @@ const Hero = () => {
 
     <div className=' flex-wrap	flex w-100  justify-center items-center mt-4'>
     <img src={featuremob}   className='md:hidden'     />
-    <img src={feature}  className='md:block hidden my-5'    />
+    <img src={feature}  className='md:block hidden my-5' />
     <div className=' flex flex-col items-center'>
       <h1 className=' text-3xl m-4'>shop by category</h1>
     
