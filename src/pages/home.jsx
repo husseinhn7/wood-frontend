@@ -5,6 +5,11 @@ import CategorySection from '../components/categorySection'
 import Card from '../components/card'
 import BestSellers from '../components/bestSellers'
 import WhoWeAreSection from '../components/whoWeAreSection'
+import Features from '../components/features'
+
+
+
+
 const Home = () => {
   return (
     <>
@@ -13,6 +18,7 @@ const Home = () => {
         <CategorySection />
         <BestSellers /> 
         <WhoWeAreSection />
+        <Features />
     </>
   )
 }
