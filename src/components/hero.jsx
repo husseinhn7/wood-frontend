@@ -25,7 +25,9 @@ const Hero = () => {
     <img src={featuremob}   className='md:hidden'     />
     <img src={feature}  className='md:block hidden my-5' />
     <div className=' flex flex-col items-center'>
+      <h1>Hussein.dev</h1>
       <h1 className=' text-3xl m-4'>shop by category</h1>
+      
     
     </div>
 

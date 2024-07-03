@@ -3,8 +3,8 @@ import Card from './card'
 
 const BestSellers = () => {
   return (
-    <div className=' flex items-center justify-center flex-col'>
-        <h1 className=' text-xl my-7'>Our Bestsellers</h1>
+    <div className=' flex items-center justify-center flex-col my-20'>
+        <h1 className=' text-3xl my-7'>Our Bestsellers</h1>
         <div className=' flex items-center  justify-between gap-5 '>
         <Card/>
         <Card/>

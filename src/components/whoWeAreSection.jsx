@@ -3,7 +3,7 @@ import img from "../assets/Group_1632_1_1.webp"
 const WhoWeAreSection = () => {
   return (
     <div className=' flex flex-col  justify-between items-center gap-5 w-100 my-8'>
-        <h1 className=' text-2xl'>Who We Are</h1>
+        <h1 className=' text-3xl'>Who We Are</h1>
         <p>We are Enjoy The Wood, the inventors of the Wooden World Maps!
         Today we continue revolutionizing the wall decor market</p>
         <div className='  flex  justify-evenly items-center '>
