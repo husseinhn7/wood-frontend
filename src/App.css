@@ -3,18 +3,14 @@
     background-color: blue;
     transition: all 0.3s ease;
     opacity: 0;    
-
-
-
-
 }
-
-
-
-
 
 .h:hover .m {
     opacity: 1;    
     margin-bottom: 30px;
 
+}
+
+.shadow {
+    box-shadow: 0 7px 12px -4px rgba(0, 0, 0, .22);
 }

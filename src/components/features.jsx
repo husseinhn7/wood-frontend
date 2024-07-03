@@ -11,7 +11,12 @@ import { FaRegStar } from "react-icons/fa6";
 
 
 const Features = () => {
-  return (<div className=' flex flex-col gap-6 items-center'>
+
+  return (
+    <>
+    
+    
+    <div className=' flex flex-col gap-6 items-center'>
             <h1 className=' font-bold text-3xl'> 
             Why You'll Love Wood World Map From Enjoy The Wood</h1>
     <div className=' flex justify-between  px-8'>
@@ -47,6 +52,8 @@ paragraph="Enjoy The Wood world map makes a standout interior spot. Express your
       
     </div>
     </div>
+
+    </>
   )
 }
 

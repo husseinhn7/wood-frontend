@@ -11,9 +11,6 @@ const BestSellers = () => {
         <Card/>
         <Card/>
         <Card/>
-
-
-      
     </div>
       
     </div>

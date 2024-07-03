@@ -6,20 +6,20 @@ import Card from '../components/card'
 import BestSellers from '../components/bestSellers'
 import WhoWeAreSection from '../components/whoWeAreSection'
 import Features from '../components/features'
-
-
-
-
+import TestimonyCard from '../components/testimonyCard'
+import TestimonialsSection from '../components/testimonialsSection'
+import Footer from '../components/footer'
+import MainLayout from '../components/mainLayout'
 const Home = () => {
   return (
-    <>
-        <Header />
+    <MainLayout>
         <Hero />
         <CategorySection />
         <BestSellers /> 
         <WhoWeAreSection />
-        <Features />
-    </>
+        <TestimonialsSection />
+        <Features />        
+    </MainLayout>
   )
 }
 
