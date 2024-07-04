@@ -6,7 +6,7 @@ import WhoWeAreSection from '../components/whoWeAreSection'
 import Features from '../components/features'
 import TestimonialsSection from '../components/testimonialsSection'
 import MainLayout from '../components/mainLayout'
-
+import ReasonsSection from '../components/reasonsSection'
 
 const Home = () => {
   return (
@@ -16,7 +16,8 @@ const Home = () => {
         <BestSellers /> 
         <WhoWeAreSection />
         <TestimonialsSection />
-        <Features />        
+        <Features />    
+        <ReasonsSection />    
     </MainLayout>
   )
 }

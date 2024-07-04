@@ -7,7 +7,7 @@ import img from "../assets/Natural-Color-Maps_1.webp"
 
 const TestimonyCard = () => {
   return (
-    <div className=' flex h-96 w-60 bg-black flex-col   rounded-xl  overflow-clip'>
+    <div className=' flex h-96 w-60 bg-black flex-col   rounded-xl  overflow-clip ml-3'>
         <img className='h-1/2 w-full' src={img} /> 
 
 

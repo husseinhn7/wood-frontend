@@ -22,10 +22,14 @@ const TestimonialsSection = () => {
         <Swiper 
         spaceBetween={1}
         slidesPerView={Math.floor(width / 240) - 1}
-        className='  self-center'
+        className='  self-center relative'
 
         >
-        <SlideBtn type="next" />
+        
+          <div className=' flex w-full items-center justify-between'>
+          <SlideBtn type="next" />
+          <SlideBtn type="prev" />
+          </div>
             <SwiperSlide > <TestimonyCard/>  </SwiperSlide>
             <SwiperSlide > <TestimonyCard/>  </SwiperSlide>
             <SwiperSlide > <TestimonyCard/>  </SwiperSlide>
@@ -38,7 +42,7 @@ const TestimonialsSection = () => {
             <SwiperSlide > <TestimonyCard/>  </SwiperSlide>
             <SwiperSlide > <TestimonyCard/>  </SwiperSlide>
             <SwiperSlide > <TestimonyCard/>  </SwiperSlide>
-        <SlideBtn type="prev" />
+        
 
       </Swiper>
     </div>

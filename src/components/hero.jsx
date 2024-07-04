@@ -17,7 +17,7 @@ import CategoryCard from './categoryCard'
 const Hero = () => {
   return (
 
-    <div className= "bg-[url('../assets/hero.webp')]">
+    <div className= "bg-[url('../assets/hero.webp')] w-full overflow-hidden">
     <img   src={hero}    className='md:block hidden'  />
     <img   src={mob}    className='md:hidden'  />
 
