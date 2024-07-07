@@ -7,9 +7,9 @@ const CategoryCard = ({bgImage}) => {
   return (
     <Link to='#'>
       <div    style={{'--image-url': `url(${bgImage})`}}
-              className='h w-[20vw] h-[20vh] flex items-center bg-slate-400
+              className='h w-[40vw] h-[40vw] md:w-[20vw] md:h-[20vw] flex items-center bg-slate-400
               bg-[image:var(--image-url)]
-              rounded-md  justify-end pb-6 flex-col         
+              rounded-md  justify-end pb-6 flex-col  bg-cover        
               '>
               <div className=' w-14 h-14 m flex justify-center items-center bg-white rounded-full'     >
                   <MdArrowForwardIos className=' text-opacity-0'  />

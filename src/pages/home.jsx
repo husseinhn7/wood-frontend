@@ -12,12 +12,20 @@ const Home = () => {
   return (
     <MainLayout>
         <Hero />
-        <CategorySection />
+        <CategorySection /> 
         <BestSellers /> 
+
         <WhoWeAreSection />
         <TestimonialsSection />
-        <Features />    
-        <ReasonsSection />    
+        <Features />
+        <ReasonsSection /> 
+
+
+       { /*
+       
+        
+        
+       */}   
     </MainLayout>
   )
 }

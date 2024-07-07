@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const MenuItem = ({title, link, menu }) => {
 
   return (
-    <li className=' flex content-center items-center hover:text-opacity-60 font-bold hover:font-semibold '>
+    <li className=' flex content-center items-center hover:text-opacity-60 font-bold hover:text-slate-500 '>
       <Link to={link}>      {title}     </Link> 
       {menu && <IoIosArrowDown className='ml-3'/>}
     </li>

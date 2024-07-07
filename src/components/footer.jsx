@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className='bg-[#F2F2F2] flex w-full p-10   items-center  justify-evenly'>
-      <div className=' w-1/5    '>
+    <div className='bg-[#F2F2F2] flex w-full p-10 gap-5  items-center  justify-evenly flex-wrap'>
+      <div className=' w-3/4 md:w-1/5    '>
          
         <ul className=' w-full'> 
           <li>
@@ -22,10 +22,9 @@ const Footer = () => {
         </ul>
       
       </div>
-      <div className=' w-1/5     
-      '> 
-        <h2 className='  mb-4 font-semibold'> CUSTOMER CARE </h2>
-        <ul className='ml-2 '>
+      <div className='   w-3/4 md:w-1/5 '> 
+        <h2 className=' w-full mb-4 font-semibold'> CUSTOMER CARE </h2>
+        <ul className='ml-2 w-full '>
           <li className='mb-2 '>Returns & Exchanges</li>
           <li className='mb-2 '>Terms of Service</li>
           <li className='mb-2 '>Privacy Policy</li>
@@ -33,9 +32,9 @@ const Footer = () => {
         </ul>
       
       </div>
-      <div className=' w-1/5   '> 
-        <h2 className='  mb-4 font-semibold'>FIND OUT MORE  </h2>
-        <ul className='ml-2 '>
+      <div className=' w-3/4 md:w-1/5   '> 
+        <h2 className=' w-full mb-4 font-semibold'>FIND OUT MORE  </h2>
+        <ul className='ml-2 w-full'>
           <li className='mb-2 '>Our Brand History     </li>
           <li className='mb-2 '>contact us</li>
           <li className='mb-2 '>reviews</li>
@@ -43,9 +42,9 @@ const Footer = () => {
         </ul>
       
       </div>
-      <div className=' w-1/5   '> 
-        <h2 className='mb-2 font-semibold'>Want $20 OFF YOUR FIRST PURCHASE?</h2>
-        <ul className='  '>
+      <div className='w-3/4 md:w-1/5   '> 
+        <h2 className='mb-2 w-full font-semibold'>Want $20 OFF YOUR FIRST PURCHASE?</h2>
+        <ul className=' w-full '>
           <li className='mb-2  text-center'>Sign up with your email address to unlock a $20 credit! Must redeem within 2 days of receipt.     </li>
           <li className='mb-2'><input type='text' className=' outline-none w-full rounded h-10 p-4' placeholder='Your E mail'  /></li>
           <li className=''><button className=' outline-none w-full  h-10   bg-[#44B26F] text-white hover:text-[#44B26F] hover:bg-white rounded hover:border-[#44B26F] hover:border' > GET $10 CREDIT </button></li>
