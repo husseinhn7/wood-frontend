@@ -8,13 +8,12 @@ import TestimonialsSection from '../components/testimonialsSection'
 import MainLayout from '../components/mainLayout'
 import ReasonsSection from '../components/reasonsSection'
 
-const Home = () => {
+const HomePage = () => {
   return (
     <MainLayout>
         <Hero />
         <CategorySection /> 
         <BestSellers /> 
-
         <WhoWeAreSection />
         <TestimonialsSection />
         <Features />
@@ -30,4 +29,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomePage

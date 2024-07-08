@@ -3,9 +3,9 @@ import img from '../assets/Natural-Color-Maps_1.webp'
 import img2 from "../assets/Map-on-board.webp"
 import { FaRegHeart } from "react-icons/fa6";
 
-const Card = ({}) => {
+const Card = ({width}) => {
   return (
-    <div className='   w-64 rounded hover: cursor-pointer'>
+    <div className={`${width}   h-96 bg-slate-400 rounded hover: cursor-pointer`}>
         <div 
           style={{"--main-img" : `url(${img})`,
            "--alt-img" : `url(${img2})`,
@@ -13,7 +13,7 @@ const Card = ({}) => {
           
           }}
           className='bg-[image:var(--main-img)]
-            w-64 h-64 bg-no-repeat bg-cover 
+            w-full  h-4/6 bg-no-repeat bg-cover 
             flex justify-end items-end hover:bg-[image:var(--alt-img)]
              transition-all
             
@@ -22,8 +22,6 @@ const Card = ({}) => {
         
         <span className=' w-8 h-8 rounded-full bg-slate-400 m-2 flex justify-center items-center'   >
            <FaRegHeart className=' text-white '/>
-        
-        
         </span>
         
         

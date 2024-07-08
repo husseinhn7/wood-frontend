@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BestSellers = () => {
+const ProfilePage = () => {
   return (
     <div>
       
@@ -8,4 +8,5 @@ const BestSellers = () => {
   )
 }
 
-export default BestSellers
+export default ProfilePage
+

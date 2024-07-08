@@ -8,6 +8,8 @@ import { IoMdHeartEmpty } from "react-icons/io";
 import MenuItem from './menuItem';
 import { HiMiniBars3 } from "react-icons/hi2";
 import { Link } from 'react-router-dom';
+import MobMenu from './mobMenu';
+import Popup from './popup';
 
 
 
@@ -17,9 +19,15 @@ const Header = () => {
 
   return (
     <header className=' flex justify-between items-center  bg-white p-3 sticky top-0 shadow-md z-50'>
-        <div className='md:hidden   w-1/5' ><HiMiniBars3 className='text-2xl'/></div>
-        <img src={logo} className='max-h-12 w-1/5'   />
-
+        <button onClick={()=>setOpen(true)} className='md:hidden   w-1/5' ><HiMiniBars3 className='text-2xl'/></button>
+        <Popup open={open} setOpen={setOpen}>
+          <MobMenu />
+        
+        
+        </Popup>
+        <div className='w-1/5 flex justify-end items-center'> 
+        <img src={logo} className='h-12 '   />
+        </div>
             <div className='md:block hidden'>
               <ul className=' flex justify-between items-center  gap-5' >
               

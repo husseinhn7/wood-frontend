@@ -6,6 +6,7 @@ import { GoGoal } from "react-icons/go";
 import { FaRegHeart } from "react-icons/fa";
 import { BiLike } from "react-icons/bi";
 import { FaRegStar } from "react-icons/fa6";
+import FeaturesMob from './featuresMob';
 
 
 
@@ -19,7 +20,7 @@ const Features = () => {
     <div className=' flex flex-col gap-6 items-center  mb-5'>
             <h1 className=' font-bold text-3xl mb-5'> 
             Why You'll Love Wood World Map From Enjoy The Wood</h1>
-    <div className=' flex justify-between  px-8'>
+    <div className=' md:flex justify-between  px-8 hidden'>
         <SubFeature 
             icon={<BsGlobeAmericas className=' text-white text-4xl'/>}
             title="100% Unique Expert Craftsmanship"
@@ -51,6 +52,7 @@ paragraph="Enjoy The Wood world map makes a standout interior spot. Express your
 />
       
     </div>
+    <FeaturesMob />
     </div>
 
     </>

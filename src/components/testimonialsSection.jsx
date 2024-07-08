@@ -31,26 +31,46 @@ const TestimonialsSection = () => {
     const width  = useWindowWidth()
   return ( 
     <>
-    <p> {Math.floor(width / 240)}  </p>
-    <div className=' flex px-20 my-20' data-aos="fade-right">
+     <div className=' flex   my-20' data-aos="fade-right">
    
-    <div ref={prevRef} className='cursor-pointer flex items-center justify-center rounded-full bg-slate-100 w-14 h-14 shadow-lg relative top-0 left-0'>
-         
-    </div>
+   
       
     
         <Swiper 
+            
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}
             pagination={{ clickable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log('slide change')}
-            slidesPerView={Math.floor(width / 240) - 1}
-            className='  self-center relative'
-            navigation = {
+             
+             navigation = {
               {prevEl: prevRef.current,
           nextEl: nextRef.current,}
             }
+
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              480: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+              },
+              640: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 0,
+              },
+              1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+              },
+            }}
             
 
         >
