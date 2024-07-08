@@ -4,13 +4,13 @@ import MenuItem from './menuItem'
 
 const MobMenu = () => {
   return (
-    <div className='bg-slate-100 rounded-xl flex h-60 w-60 p-10 flex-col'>
-    <MenuItem title="BESTSELLERS" link="/bestsellers" menu={false}  />
-    <MenuItem title="WORLD MAPS" link="/" menu={true}   />
-    <MenuItem title="CANVAS" link="/canvas"   />
-    <MenuItem title="SHOP ALL" link="/"   />
-    <MenuItem title="INFO" link="/"   />
-
+    <div className='bg-slate-100 rounded-xl flex  gap-2 p-10 flex-col'>
+    <Link  className=' text-2xl' to="/bestsellers" menu={false}  >BESTSELLERS</Link>
+    <Link  className=' text-2xl' to="/" menu={true}   >WORLD MAPS</Link>
+    <Link  className=' text-2xl' to="/canvas"   >CANVAS</Link>
+    <Link  className=' text-2xl' to="/"   >SHOP ALL</Link>
+    <Link  className=' text-2xl' to="/"   >INFO</Link>
+ 
       
     </div>
   )

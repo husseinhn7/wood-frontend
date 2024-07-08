@@ -10,23 +10,25 @@ import { HiMiniBars3 } from "react-icons/hi2";
 import { Link } from 'react-router-dom';
 import MobMenu from './mobMenu';
 import Popup from './popup';
-
+import Cart from './cart';
 
 
 
 const Header = () => {
   const [ open , setOpen ] = useState(false) 
+  const [ openCart , setOpenCart ] = useState(false) 
 
   return (
     <header className=' flex justify-between items-center  bg-white p-3 sticky top-0 shadow-md z-50'>
         <button onClick={()=>setOpen(true)} className='md:hidden   w-1/5' ><HiMiniBars3 className='text-2xl'/></button>
-        <Popup open={open} setOpen={setOpen}>
+        <Popup open={open} setOpen={setOpen} dir="l">
           <MobMenu />
-        
-        
+        </Popup>
+        <Popup open={openCart} setOpen={setOpenCart} dir="r">
+          <Cart />
         </Popup>
         <div className='w-1/5 flex justify-end items-center'> 
-        <img src={logo} className='h-12 '   />
+        <Link to="/"> <img src={logo} className='h-12 '   /></Link>
         </div>
             <div className='md:block hidden'>
               <ul className=' flex justify-between items-center  gap-5' >
@@ -43,9 +45,9 @@ const Header = () => {
             </div>
             <div className='  flex justify-between items-center md:gap-4 md:w-1/5'>
             <div className='  flex justify-evenly gap-2 md:justify-between items-center md:gap-4 '>
-                <IoMdHeartEmpty  className=' text-2xl'/>
-                <IoPersonOutline  className=' text-2xl'/>
-                <HiOutlineShoppingBag  className=' text-2xl'/>
+                <Link to="/wishlist"><IoMdHeartEmpty  className=' text-2xl'/></Link>
+                <Link to="/profile"><IoPersonOutline  className=' text-2xl'/></Link>
+                <button onClick={()=>setOpenCart(true)}><HiOutlineShoppingBag  className=' text-2xl'/></button>
             </div>
           </div>
     </header>

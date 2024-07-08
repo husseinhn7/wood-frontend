@@ -11,6 +11,8 @@ import Swip from './components/swip'
 import { Router, Route, Routes } from 'react-router'
 import BestSellers from './components/bestSellers'
 import BestSellersPage from './pages/bestSellersPage'
+import WishListPage from './pages/wishListPage'
+import ProfilePage from './pages/profilePage'
 
 
 
@@ -23,6 +25,8 @@ function App() {
     <Routes>
       <Route  path='/' element={<HomePage />}   />
       <Route  path='/bestsellers' element={<BestSellersPage /> } />
+      <Route  path='/profile' element={<ProfilePage/>} />
+      <Route  path='/wishlist' element={<WishListPage/>} />
     
     </Routes>
     
