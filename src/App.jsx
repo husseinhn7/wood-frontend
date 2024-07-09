@@ -13,8 +13,9 @@ import BestSellers from './components/bestSellers'
 import BestSellersPage from './pages/bestSellersPage'
 import WishListPage from './pages/wishListPage'
 import ProfilePage from './pages/profilePage'
-
-
+import LoginPage from './pages/loginPage'
+import Fun from './components/demo'
+import MapPage from './pages/mapPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,7 +28,10 @@ function App() {
       <Route  path='/bestsellers' element={<BestSellersPage /> } />
       <Route  path='/profile' element={<ProfilePage/>} />
       <Route  path='/wishlist' element={<WishListPage/>} />
-    
+      <Route  path='/:type' element={<LoginPage />} />
+      <Route  path='/test' element={<Fun />} />
+      <Route  path='/products' element={<MapPage />} />
+     
     </Routes>
     
     </>
