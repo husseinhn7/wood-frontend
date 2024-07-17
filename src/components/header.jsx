@@ -27,7 +27,7 @@ const Header = () => {
         <Popup open={openCart} setOpen={setOpenCart} dir="r">
           <Cart />
         </Popup>
-        <div className='w-1/5 flex justify-end items-center'> 
+        <div className='w-1/5 flex justify-center items-center'> 
         <Link to="/"> <img src={logo} className='h-12 '   /></Link>
         </div>
             <div className='md:block hidden'>
@@ -37,7 +37,7 @@ const Header = () => {
               <MenuItem title="WORLD MAPS" link="/" menu={true}   />
               <MenuItem title="CANVAS" link="/canvas"   />
               <MenuItem title="SHOP ALL" link="/"   />
-              <MenuItem title="INFO" link="/"   />
+              <MenuItem title="INFO" link="/products"   />
 
               
               </ul>

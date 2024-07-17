@@ -1,18 +1,41 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 
-const Men = ({ open , set }) => {
+
+
+const MySwiperComponent = () => {
+  const swiperRef = useRef(null);
+
+  const goToSlide = (index) => {
+      if (swiperRef.current && swiperRef.current.swiper) {
+          swiperRef.current.swiper.slideTo(index);
+      }
+  };
+
   return (
-    <div  className={`fixed inset-0 bg-black bg-opacity-0 transition-opacity ${
-        open ? 'hidden' : ''
-      }`}
-    onClick={()=>set(false)}
-    >
+      <div>
+          <Swiper
+              ref={swiperRef}
+              modules={[Navigation]}
+              navigation
+              spaceBetween={50}
+              slidesPerView={1}
+          >
+              <SwiperSlide>Slide 1</SwiperSlide>
+              <SwiperSlide>Slide 2</SwiperSlide>
+              <SwiperSlide>Slide 3</SwiperSlide>
+              <SwiperSlide>Slide 4</SwiperSlide>
+          </Swiper>
 
-            hi lilfuck
+          <button onClick={() => goToSlide(0)}>Go to Slide 1</button>
+          <button onClick={() => goToSlide(1)}>Go to Slide 2</button>
+          <button onClick={() => goToSlide(2)}>Go to Slide 3</button>
+          <button onClick={() => goToSlide(3)}>Go to Slide 4</button>
+      </div>
+  );
+};
 
-      
-    </div>
-  )
-}
-
-export default Men
+export default MySwiperComponent;

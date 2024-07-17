@@ -18,7 +18,7 @@ const Features = () => {
     
     
     <div className=' flex flex-col gap-6 items-center  mb-5'>
-            <h1 className=' font-bold text-3xl mb-5'> 
+            <h1 className=' font-bold text-3xl mb-5 text-center' > 
             Why You'll Love Wood World Map From Enjoy The Wood</h1>
     <div className=' md:flex justify-between  px-8 hidden'>
         <SubFeature 

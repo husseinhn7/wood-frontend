@@ -16,6 +16,9 @@ import ProfilePage from './pages/profilePage'
 import LoginPage from './pages/loginPage'
 import Fun from './components/demo'
 import MapPage from './pages/mapPage'
+import Test from './pages/test'
+
+rafc
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,8 +32,8 @@ function App() {
       <Route  path='/profile' element={<ProfilePage/>} />
       <Route  path='/wishlist' element={<WishListPage/>} />
       <Route  path='/:type' element={<LoginPage />} />
-      <Route  path='/test' element={<Fun />} />
       <Route  path='/products' element={<MapPage />} />
+      <Route  path='/test'  element={ <Test /> }/>
      
     </Routes>
     

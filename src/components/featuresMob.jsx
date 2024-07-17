@@ -17,15 +17,14 @@ import { SwiperSlide, Swiper} from 'swiper/react';
 
 const  FeaturesMob = () => {
   return (
-    <div className=' w-full md:hidden'>
+    <div className=' w-full md:hidden px-2'>
         <Swiper
-        modules={[Navigation, Pagination,  ]}
+        modules={[Navigation, Pagination  ]}
             spaceBetween={50}
             slidesPerView = {1}
             pagination={{ clickable: true }}
             onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}           
-         >
+          >
             <SwiperSlide>
              <SubFeature 
             icon={<BsGlobeAmericas className=' text-white text-4xl'/>}
