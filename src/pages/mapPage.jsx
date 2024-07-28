@@ -12,6 +12,7 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import MapImages from '../components/mapImages'
 import Features from '../components/features'
+import Lay from '../components/Lay'
 const MapPage = () => {
     const [s, setS] = useState(0)
     const [tab, setTab] = useState("1")
@@ -105,8 +106,8 @@ const MapPage = () => {
             </div>
 
             <div className=' flex  items-center  justify-evenly mt-5 flex-col lg:flex-row p-4'>
-                <img src={size} className='w-full md:w-6/12 rounded-md order-2' />
-            <div  className=' w-full md:w-6/12  flex items-center justify-center'>
+                <div className='w-full md:w-6/12 rounded-md order-2 min-h-[50vh] flex items-center justify-center'> <Lay />   </div>
+             <div  className=' w-full md:w-6/12  flex items-center justify-center'>
                 <h1 className='text-3xl'> MAP SIZES</h1>
                
 

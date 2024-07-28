@@ -20,7 +20,7 @@ const Card = ({width}) => {
             '
         > 
         
-        <span className=' w-8 h-8 rounded-full bg-slate-400 m-2 flex justify-center items-center'   >
+        <span className='  w-8 h-8 rounded-full  bg-slate-400 m-2 flex justify-center items-center'   >
            <FaRegHeart className=' text-white '/>
         </span>
         

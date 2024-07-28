@@ -8,13 +8,14 @@ import Dragg from './dragg';
 // import { FreeMode, Navigation, Thumbs } from 'swiper/react';
 import MySwiperComponent from "./men"
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import Lay from './Lay';
 const Fun = () => {
     const swiper = useSwiper()
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
-    return (
-        <Dragg />
-         
+    return (<>
+         <Lay />
+         </>
     )
 }
 

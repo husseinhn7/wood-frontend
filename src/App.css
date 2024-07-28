@@ -29,3 +29,14 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+
+img::-moz-selection {
+    background-color: transparent;
+    color: #000;
+}
+
+img::selection {
+    background-color: transparent;
+    color: #000;
+}

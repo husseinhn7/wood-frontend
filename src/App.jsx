@@ -16,13 +16,11 @@ import ProfilePage from './pages/profilePage'
 import LoginPage from './pages/loginPage'
 import Fun from './components/demo'
 import MapPage from './pages/mapPage'
-import Test from './pages/test'
+import Test from "./components/geminiTest"
 
-rafc
-
+ 
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
   return (
     <>
 
@@ -33,8 +31,7 @@ function App() {
       <Route  path='/wishlist' element={<WishListPage/>} />
       <Route  path='/:type' element={<LoginPage />} />
       <Route  path='/products' element={<MapPage />} />
-      <Route  path='/test'  element={ <Test /> }/>
-     
+      <Route  path='/test'  element={<Test /> }/>
     </Routes>
     
     </>

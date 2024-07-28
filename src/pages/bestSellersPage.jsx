@@ -24,7 +24,6 @@ const BestSellersPage = () => {
         <ProductCard  />
         <ProductCard  />
         <ProductCard  />
-      
       </div>
       
     </MainLayout>

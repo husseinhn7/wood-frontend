@@ -1,11 +1,12 @@
 import React from 'react'
+import Test from "../components/Test"
 
-const Test = () => {
+const Tes = () => {
   return (
     <div >
-       Lara
+       <Test />
     </div>
   )
 }
 
-export default Test
+export default Tes
